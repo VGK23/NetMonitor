@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>45c149eb-aa7f-42aa-abd1-a7beeaf38ef0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.*">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.OpenApi" Version="2.7.5" />
+    <PackageReference Include="Serilog.AspNetCore" Version="11.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetMonitor.Infrastructure\NetMonitor.Infrastructure.csproj" />
+    <ProjectReference Include="..\NetMonitor.Application\NetMonitor.Application.csproj" />
+  </ItemGroup>
+
+</Project>
